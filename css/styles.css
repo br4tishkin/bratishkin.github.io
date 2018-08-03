@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  background: linear-gradient(1deg, #292e49, #536976);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+  display: grid;
+}
+
+.header-content {
+  margin: 2em;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
+.hor-line
+{
+  margin: 0 auto;
+  width: calc(100% - 48px);
+  background-color: white;
+  height: 1px;
+}
+
+.for-logo {
+  display: flex;
+  padding: 1rem;
+}
+
+.logo {
+  width: auto;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.welcome {
+  color: white;
+  margin: 1rem;
+  font-size: 3rem;
+  display: grid;
+}
+
+.welcome-buttons {
+  display: flex;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 624px) {
+  .welcome-buttons {
+    display: grid;
+    margin: 1rem 0;
+  }
+  .button {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .welcome {
+    font-size: 2rem;
+    margin: 0em auto;
+  }
+  .button {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.menu {
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  padding: 0 1rem;
+}
+
+.menu-item {
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  color:white;
+  color: white;
+  transition: ease 0.2s;
+  padding: 1rem;
+  user-select: none;
+  outline: none;
+}
+
+.menu-item:hover {
+  background: rgba(255,255,255,0.6);
+  color: black;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.menu-item:active {
+  background: rgba(255,255,255,0.9);
+  transition: ease 0.1s;
+}
+
+.content {
+  margin: 1rem;
+}
+
+.button {
+  font-size: 1rem;
+  background: rgba(255,255,255,0.2);
+  border-width: 0px;
+  border-radius: 5rem;
+  min-width: 10rem;
+  outline: none;
+  color: white;
+  padding: 0.5rem;
+  margin-right: 1em;
+}
+
+.button:active {
+  background: rgba(255,255,255,0.5);
+  outline: none;
+  border-left-color: : white;
+  border-right-color: white;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-width: 0px;
+}
